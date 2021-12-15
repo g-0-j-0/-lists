@@ -1,0 +1,19 @@
+l=[]
+n=int(input())
+while n!=0:
+    k=input()
+    if k[:6]=="insert":
+        l.insert(int(k[7:8]),int(k[9:]))
+    elif k=="print":
+        print(l)
+    elif k[:6]=="remove":
+        l.remove(int(k[7:]))
+    elif k[:6]=="append":
+        l.append(int(k[7:]))
+    elif k=="sort":
+        l.sort()
+    elif k=="pop":
+        l.pop()
+    elif k=="reverse":
+        l.reverse()
+    n-=1
